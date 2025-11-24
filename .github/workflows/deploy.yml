@@ -3,34 +3,36 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # デプロイしたいブランチを指定
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # リポジトリのチェックアウト
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Node.js をセットアップ
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: 20 # 適宜バージョンを指定
 
+      # 依存関係をインストール
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      # ビルド
+      - name: Build project
         run: npm run build
 
+      # GitHub Pages にアップロード（v4）
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
-  deploy:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    steps:
+      # デプロイ
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
