@@ -24,14 +24,13 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"   # 公開したいフォルダ（基本は ./ でOK）
+          path: ./      # 公開フォルダ
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
