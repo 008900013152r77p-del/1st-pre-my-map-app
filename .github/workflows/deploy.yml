@@ -24,7 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./"   # ここに公開したいフォルダを指定(通常は ./)
+          path: "./dist"   # ここに公開したいフォルダを指定(通常は ./)
 
   deploy:
     needs: build
