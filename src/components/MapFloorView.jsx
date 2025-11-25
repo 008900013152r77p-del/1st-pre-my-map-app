@@ -35,7 +35,7 @@ export default function MapFloorView({ route, places, stepIndex }) {
         const imageCropY = floorMapImg[currentNode.floor] ?? 0;
 
         const img = new Image();
-        img.src = "/map_images/map_image.png";
+        img.src = "../map_images/map_image.png";
 
         img.onload = () => {
             const cropHeight = 500;
