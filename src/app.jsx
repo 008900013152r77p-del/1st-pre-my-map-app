@@ -204,8 +204,13 @@ export default function App() {
       const node = places.find(p => p.id === route[nextIndex].id);
       if (!node || node.category !== "中継") break;
       nextIndex++;
+    } if (nextIndex >= route.length) {
+      // 最後のステップに到達した場合、終了確認モーダルを表示
+      setShowEndConfirm(true);
+    } else {
+      setStepIndex(Math.min(nextIndex, route.length - 1));
     }
-    setStepIndex(Math.min(nextIndex, route.length - 1));
+
   };
   const handlePrevStep = () => {
     let prevIndex = stepIndex - 1;
@@ -506,7 +511,7 @@ export default function App() {
       {showEndConfirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
           <div className="bg-white rounded-xl shadow-xl p-6 w-[92%] max-w-md">
-            <p className="text-center text-gray-800 mb-4">本当にナビを終了しますか？</p>
+            <p className="text-center text-gray-800 mb-4">ナビを終了しますか？</p>
 
             <div className="flex gap-3">
               <button
