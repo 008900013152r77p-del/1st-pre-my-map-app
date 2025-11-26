@@ -158,8 +158,8 @@ export const nodes = [
   { id: 323, name: "視聴覚室前モール", category: "中継", floor: "3F", x: 1040, y: 4630, tf: "t" },
 
   //3Fその他
-  { id: 324, name: "2F食販南", category: "食事", floor: "3F", x: 1040, y: 5110, tf: "t" },
-  { id: 325, name: "2F食販北", category: "食事", floor: "3F", x: 1040, y: 4840, tf: "t" },
+  { id: 324, name: "3F食販南", category: "食事", floor: "3F", x: 1040, y: 5110, tf: "t" },
+  { id: 325, name: "3F食販北", category: "食事", floor: "3F", x: 1040, y: 4840, tf: "t" },
   { id: 326, name: "階段A", category: "階段", floor: "3F", x: 970, y: 4680, tf: "t" },
   { id: 327, name: "多目的A", category: "中継", floor: "3F", x: 960, y: 4680, tf: "t" },
   { id: 328, name: "小会議室", category: "中継", floor: "3F", x: 710, y: 4680, tf: "t" },
