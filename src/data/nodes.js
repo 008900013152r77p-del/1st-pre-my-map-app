@@ -86,7 +86,7 @@ export const nodes = [
   { id: 211, name: "階段C", category: "階段", floor: "2F", x: 320, y: 3200, tf: "t" },
 
   //3年フロア
-  { id: 212, name: "選択2A", category: "部活", floor: "2F", x: 1150, y: 3190, tf: "t" },
+  { id: 212, name: "選択2A", category: "部活", floor: "2F", x: 1250, y: 3190, tf: "t" },
   { id: 213, name: "3-4", category: "教室", floor: "2F", x: 1410, y: 3190, tf: "t" },
   { id: 214, name: "3-3", category: "教室", floor: "2F", x: 1570, y: 3190, tf: "t" },
   { id: 215, name: "3-2", category: "教室", floor: "2F", x: 1730, y: 3190, tf: "t" },
@@ -142,7 +142,7 @@ export const nodes = [
   { id: 311, name: "階段C", category: "階段", floor: "3F", x: 320, y: 5200, tf: "t" },
 
   //1年フロア
-  { id: 312, name: "1-5", category: "部活", floor: "3F", x: 1150, y: 5190, tf: "t" },
+  { id: 312, name: "1-5", category: "部活", floor: "3F", x: 1250, y: 5190, tf: "t" },
   { id: 313, name: "1-4", category: "教室", floor: "3F", x: 1410, y: 5190, tf: "t" },
   { id: 314, name: "1-3", category: "教室", floor: "3F", x: 1570, y: 5190, tf: "t" },
   { id: 315, name: "1-2", category: "教室", floor: "3F", x: 1730, y: 5190, tf: "t" },
